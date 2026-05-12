@@ -24,8 +24,9 @@ public class Ejercicios {
         // Parte recursividad
         int resultadoRecursivo =sumaConsecutivosPasos(num-1);
         int resultadoOperacion = num + resultadoRecursivo;
-        System.out.println("ResultadoOp"+num +"+"+"sumaConsecutivosPasos("+resultadoRecursivo+")");
+        System.out.println( "ResultadoOp: " + num + " + " + resultadoRecursivo + " = " + resultadoOperacion);
         return num +sumaConsecutivosPasos(num-1);
+       
     }
 
     // Potencia de unn numero: Escribe una funcion recursividad
@@ -36,11 +37,7 @@ public class Ejercicios {
 
         if (exponente==1)
             return base;
-        return base*getPotencia(base, exponente-1);
-
-
-
-        
+        return base*getPotencia(base, exponente-1); 
     }
 
     public int sumaDigitos(int num){
