@@ -22,9 +22,9 @@ public class Ejercicios {
             return num;
         
         // Parte recursividad
-        int resultadoRecursivo =sumaConsecutivos(num-1);
+        int resultadoRecursivo =sumaConsecutivosPasos(num-1);
         int resultadoOperacion = num + resultadoRecursivo;
         System.out.println("resultadoOperacion="+num +"+"+"sumaConsecutivosPasos("+resultadoRecursivo+")");
-        return num +sumaConsecutivos(num-1);
+        return num +sumaConsecutivosPasos(num-1);
     }
 }
